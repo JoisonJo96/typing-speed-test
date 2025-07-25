@@ -1,0 +1,209 @@
+
+
+
+
+
+
+
+/* 
+/* Reset and body */
+/* body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */ 
+
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  margin: 0;
+  padding-top: 70px; /* space for header */
+}
+
+
+
+
+
+/* Center container in page (excluding header) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-top: 100px; /* Add extra space for header */
+  box-sizing: border-box;
+}
+
+
+
+
+/* Main container card */
+.container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Heading */
+h1 {
+  color: #00796b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Question Text */
+.question {
+  font-size: 2.2rem;
+  color: #333;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+/* Input style */
+input[type="number"] {
+  padding: 12px;
+  font-size: 1.5rem;
+  width: 120px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 0 0 transparent;
+}
+
+input[type="number"]:hover {
+  border-color: #009688;
+}
+
+input[type="number"]:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 8px rgba(0, 150, 136, 0.4);
+}
+
+/* Feedback message */
+.feedback {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  min-height: 30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.feedback.correct {
+  color: green;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.feedback.wrong {
+  color: red;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Completion message */
+.completed {
+  margin-top: 25px;
+  color: #006064;
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.main-header {
+  position: fixed; /* was absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #040404;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding-top: 10px; /* or 80px if your header is taller */
+}
+
+
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%; /* makes it round */
+  margin-right: 15px;
+}
+

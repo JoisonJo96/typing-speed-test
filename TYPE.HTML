@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="TYPE.CSS"/>
+</head>
+<body>
+
+  <!-- 🔼 Header with Logo and Navigation -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="image\WhatsApp Image 2025-07-23 at 19.10.59_99aeed68.jpg" alt="Typing Logo" class="logo" />
+      <h1>Typing Speed Test</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+       
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="MALAYALAM.HTML">മലയാളം വാക്ക് ക്വിസ് </a></li>
+        <li><a href="Math.html">Multiplication Practice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔘 Typing Test Container -->
+  <div class="container">
+    <!-- Timer Display -->
+    <div class="timer-container">
+      <div id="timerDisplay" class="timer-display">00:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <label for="difficulty">Difficulty:
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="normal" selected>Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+
+      <label for="timerSelect">Timer:
+        <select id="timerSelect">
+          <option value="60">1 Minute</option>
+          <option value="120">2 Minutes</option>
+          <option value="180" selected>3 Minutes</option>
+          <option value="240">4 Minutes</option>
+          <option value="300">5 Minutes</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Text to Type -->
+    <div id="displayText" class="text-box"></div>
+
+    <!-- Typing Input -->
+    <textarea id="inputText" placeholder="Start typing here..." disabled></textarea>
+
+    <!-- Results -->
+    <div class="result" id="resultBox"></div>
+  </div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <!-- 🔽 About Section -->
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <p>
+      Welcome to the <span class="highlight">Typing Speed Test</span> – your daily practice zone to improve typing skills in a fun and easy way.
+      This tool helps everyone from school kids to professionals boost keyboard speed and accuracy.
+    </p>
+    <p>
+      Choose from <span class="highlight">Easy, Normal, Hard</span> levels and set timers from <span class="highlight">1 to 5 minutes</span>. After typing, view your <span class="highlight">WPM</span> and mistake count.
+    </p>
+    <p>
+      Practice daily and improve! <strong>Happy typing!</strong>
+    </p>
+  </section>
+<br><br><br>
+  <!-- 🔽 Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 ⌨️ Typing Speed Test. All rights reserved.</p>
+      <p>Developed by Joison Joseph</p>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="TYPE.JS"></script>
+
+</body>
+</html>
+
+
